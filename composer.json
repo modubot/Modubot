@@ -1,6 +1,8 @@
 {
     "name": "modubot/modubot",
     "description": "Modubot, the scalable, extensible IRC Bot.",
+    "keywords": ["modubot", "irc", "bot"],
+    "license": "BSD-3-Clause",
     "minimum-stability": "dev",
     "authors": [
         {
