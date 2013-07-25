@@ -1,6 +1,6 @@
 <?php
 
-namespace Modubot\Modubot;
+namespace Modubot\Modubot\Bot;
 
 
 class Bot {

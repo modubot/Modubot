@@ -18,6 +18,9 @@
     "support": {
         "irc": "irc://irc.esper.net/modubot"
     },
+    "autoload": {
+        "psr-0": {"Modubot": "src/"}
+    },
     "require": {
         "phergie/phergie-irc-generator": "1.1.0",
         "phergie/phergie-irc-parser": "1.2.0"
