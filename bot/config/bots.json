@@ -1,18 +1,19 @@
 {
+    "plugins": [
+        "Axxim\\Factoids"
+    ],
     "bots": [
         {
-            "Modubot": {
-                "nick": "Modubot",
-                "user": "Modubot",
-                "ident": "Modubot",
-                "realname": "Modubot",
-                "ctcp": {
-                    "version": "https://github.com/modubot/modubot"
-                },
-                "controls": {
-                    "command": "`.",
-                    "factoid": "?!"
-                }
+            "nick": "Modubot",
+            "user": "Modubot",
+            "ident": "Modubot",
+            "realname": "Modubot",
+            "ctcp": {
+                "version": "https://github.com/modubot/modubot"
+            },
+            "controls": {
+                "command": "`.",
+                "factoid": "?!"
             },
             "networks": [
                 {

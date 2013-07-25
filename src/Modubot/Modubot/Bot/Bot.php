@@ -5,8 +5,29 @@ namespace Modubot\Modubot\Bot;
 
 class Bot {
 
-    public function __construct(BotConfig $config) {
+    public function __construct($bot) {
 
+        foreach($bot as $key => $value) {
+            $this->$key = $value;
+        }
+
+    }
+
+    public function __get($property) {
+        if (property_exists($this, $property)) {
+            return $this->$property;
+        } else {
+            return new \Exception('Property doesn\'t exist.');
+        }
+
+    }
+
+    public function __set($property, $value) {
+        if (property_exists($this, $property)) {
+            $this->$property = $value;
+        }
+
+        return $this;
     }
 
     /**

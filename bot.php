@@ -3,14 +3,9 @@
 require __DIR__ . '/bootstrap/autoload.php';
 
 use Modubot\Modubot\Bot\Bot;
-use Modubot\Modubot\Bot\BotConfig;
+use Modubot\Modubot\Bot\Manager;
 
 // Load the configuration
-$config = new BotConfig('bot/config/bots.json');
+$manager = new Manager('bot/config/bots.json');
 
-// Start the bot
-$bot = require_once __DIR__ . '/bootstrap/start.php';
-
-$bot = new Bot($config);
-
-$bot->start();
+$manager->start();

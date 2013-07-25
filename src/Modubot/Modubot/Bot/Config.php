@@ -3,7 +3,7 @@
 namespace Modubot\Modubot\Bot;
 
 
-class BotConfig {
+class Config {
 
     public $nick;
     public $user;
@@ -14,6 +14,10 @@ class BotConfig {
 
         $rawConfig = file_get_contents($configPath);
         $config = json_decode($rawConfig);
+
+        foreach($config['networks'] as $network) {
+            var_dump($network);
+        }
 
     }
 
