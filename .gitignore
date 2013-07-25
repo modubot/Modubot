@@ -1,13 +1,11 @@
-# Bootstrap
-app/bootstrap*
+# Modubot Directories
+/vendor
+/logs
 
-# Symfony directories
-vendor/*
-*/logs/*
-*/cache/*
-web/uploads/*
-web/bundles/*
+# Composer
+composer.phar
+composer.lock
+.DS_Store
 
-# Configuration files
-app/config/parameters.ini
-app/config/parameters.yml
+# IDE
+.idea/

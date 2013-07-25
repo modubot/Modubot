@@ -1,0 +1,22 @@
+{
+    "name": "modubot/modubot",
+    "description": "Modubot, the scalable, extensible IRC Bot.",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Kamal Nasser",
+            "email": "kamal@kamalnasser.net"
+        },
+        {
+            "name": "Luke Strickland",
+            "email": "luke@axxim.net"
+        }
+    ],
+    "require": {
+        "phergie/phergie-irc-generator": "1.1.0",
+        "phergie/phergie-irc-parser": "1.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
