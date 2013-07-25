@@ -2,6 +2,7 @@
     "name": "modubot/modubot",
     "description": "Modubot, the scalable, extensible IRC Bot.",
     "keywords": ["modubot", "irc", "bot"],
+    "homepage": "http://modubot.net",
     "license": "BSD-3-Clause",
     "minimum-stability": "dev",
     "authors": [
@@ -14,6 +15,9 @@
             "email": "luke@axxim.net"
         }
     ],
+    "support": {
+        "irc": "irc://irc.esper.net/modubot"
+    },
     "require": {
         "phergie/phergie-irc-generator": "1.1.0",
         "phergie/phergie-irc-parser": "1.2.0"
