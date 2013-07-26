@@ -1,7 +1,4 @@
 {
-    "plugins": [
-        "Axxim\\Factoids"
-    ],
     "bots": [
         {
             "nick": "Modubot",
@@ -15,6 +12,9 @@
                 "command": "`.",
                 "factoid": "?!"
             },
+            "plugins": [
+                "Axxim\\Factoids"
+            ],
             "networks": [
                 {
                     "name": "EsperNET",

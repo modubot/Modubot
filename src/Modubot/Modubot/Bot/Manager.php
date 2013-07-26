@@ -11,6 +11,7 @@ namespace Modubot\Modubot\Bot;
  */
 class Manager {
 
+    public $plugins;
     public $bots;
 
     /**
@@ -25,6 +26,14 @@ class Manager {
 
         foreach($config->bots as $bot) {
             $this->bots[$bot->nick] = new Bot($bot);
+            $this->plugins = $bot->plugins;
+        }
+    }
+
+    public function registerPlugins() {
+
+        foreach($this->plugins as $plugin) {
+            echo $plugin;
         }
 
     }
@@ -33,6 +42,8 @@ class Manager {
      * Start the manager and spawn the bots
      */
     public function start() {
+        $this->registerPlugins();
+
         foreach($this->bots as $bot) {
             $bot->start();
         }

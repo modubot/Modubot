@@ -31,6 +31,13 @@ class Bot {
     }
 
     /**
+     * Validate the bot properties
+     */
+    public function validate() {
+
+    }
+
+    /**
      * Let's register what we need to for the bot to work.
      */
     private function registerLibraries() {
@@ -38,8 +45,10 @@ class Bot {
     }
 
     public function start() {
-
+        // Register libraries
         $this->registerLibraries();
+
+        // Create network configuration and store in the Bot
 
     }
 
